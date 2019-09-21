@@ -33,7 +33,7 @@ class Student
   def save
     if self.id
       sql = <<-SQL
-        UPDATE students SET name = ?, grade = ? WHERE 
+        UPDATE students SET name = ?, grade = ? WHERE id = ?
         SQL
     else
       sql = <<-SQL
